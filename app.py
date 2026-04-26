@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from tensorflow.keras.models import load_model
 import base64
 
 app = Flask(__name__)
