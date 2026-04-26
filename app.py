@@ -3,10 +3,11 @@ import sys
 import cv2
 import numpy as np
 from flask import Flask, request, jsonify
-from tensorflow.keras.models import load_model
+from flask_cors import CORS
 import base64
 
 app = Flask(__name__)
+CORS(app)
 
 # Load model
 def resource_path(relative_path):
